@@ -23,7 +23,6 @@ public class GameTest {
         testGame.computerChoice = "Scissors";
         assertEquals(true, testGame.decideWin());
         assertEquals(false, testGame.decideDraw());
-        assertEquals(false, testGame.decideLost());
     }
 
     @Test
@@ -31,13 +30,11 @@ public class GameTest {
         testGame.computerChoice = "Rock";
         assertEquals(true, testGame.decideDraw());
         assertEquals(false, testGame.decideWin());
-        assertEquals(false, testGame.decideLost());
     }
 
     @Test
     public void testLost(){
         testGame.computerChoice = "Paper";
-        assertEquals(true,testGame.decideLost());
         assertEquals(false,testGame.decideDraw());
         assertEquals(false,testGame.decideWin());
     }

@@ -29,8 +29,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="#42f4b3"
         android:onClick="onRockButtonClicked"
-        android:text="Rock"
+        android:text="@string/rock_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -46,8 +47,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="#42f4"
         android:onClick="onPaperButtonClicked"
-        android:text="Paper"
+        android:text="@string/paper_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -63,8 +65,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="#4286f4"
         android:onClick="onScissorsButtonClicked"
-        android:text="Scissors"
+        android:text="@string/scissors_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -82,9 +85,10 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_scissors"
-        app:layout_constraintVertical_bias="0.255" />
+        app:layout_constraintVertical_bias="0.171" />
 
     <TextView
         android:id="@+id/computer_score"
@@ -96,6 +100,8 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/score_display" />
+        app:layout_constraintTop_toBottomOf="@+id/score_display"
+        app:layout_constraintVertical_bias="0.143" />
 </android.support.constraint.ConstraintLayout>

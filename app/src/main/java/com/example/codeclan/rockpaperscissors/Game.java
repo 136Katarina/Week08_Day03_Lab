@@ -22,7 +22,6 @@ public class Game {
     }
 
 
-
     public Boolean decideWin() {
        String value = winLookup.get(this.playerChoice);
        return value.equals(this.computerChoice);
@@ -34,14 +33,9 @@ public class Game {
 
 
     public String result() {
-        String result = "";
-        if (decideWin()) {
-            result = "Player wins by playing " + playerChoice + " and beating " + computerChoice;
-        } else if (decideDraw()) {
-            result = "Draw, both played " + playerChoice;
-        } else {
-            result = "Computer wins by playing " + computerChoice + " and beating " + playerChoice;
-        } return result;
+        if (decideWin()) return "Player wins by playing " + playerChoice + " and beating " + computerChoice;
+        if (decideDraw())return "Draw, both played " + playerChoice;
+        return "Computer wins by playing " + computerChoice + " and beating " + playerChoice;
     }
 
 

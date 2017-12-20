@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Rock, Paper, Scissors</string>
     <string name="game_header">Please select a weapon:</string>
+    <string name="rock_button">Rock</string>
+    <string name="paper_button">Paper</string>
+    <string name="scissors_button">Scissors</string>
 </resources>
